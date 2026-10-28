@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Salchidaniela: perros calientes, hamburguesas, salchipapas y mucho sabor. ¡Haz tu pedido!">
+  <title>Salchidaniela | Antojos con mucho sabor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="announcement">
+    <span class="announcement-dot"></span>
+    <span>Tu antojo favorito está a un clic de distancia</span>
+    <span class="announcement-right">Hecho con amor ♥</span>
+  </div>
+
+  <header class="site-header" id="inicio">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Salchidaniela, inicio">
+        <span class="brand-mark"><i data-lucide="utensils"></i><span class="brand-heart">♥</span></span>
+        <span class="brand-name">salchi<span>daniela</span><small>ANTOJOS FELICES</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a class="nav-link active" href="#inicio">Inicio</a>
+        <a class="nav-link" href="#menu">Menú</a>
+        <a class="nav-link" href="#nosotros">Quiénes somos</a>
+        <a class="nav-link" href="#pagos">Pagos</a>
+        <a class="nav-link" href="#contacto">Contacto</a>
+        <button class="cart-button" id="openCart" aria-label="Abrir carrito">
+          <i data-lucide="shopping-bag"></i><span>Mi pedido</span><b id="cartCount">0</b>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow hero-glow-one"></div><div class="hero-glow hero-glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-line"></span> BIENVENIDO A TU NUEVO ANTOJO</span>
+          <h1>El sabor que te<br>hace decir <em>¡wow!</em></h1>
+          <p class="hero-description">Hamburguesas jugosas, salchipapas irresistibles y perros calientes hechos para alegrarte el día. ¿Qué se te antoja hoy?</p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">Ver nuestro menú <i data-lucide="arrow-up-right"></i></a>
+            <a href="#nosotros" class="btn btn-ghost">Conócenos</a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-avatars"><span>🍔</span><span>🌭</span><span>🍟</span></div>
+            <div><strong>Preparado al momento</strong><small>Mucho sabor en cada bocado</small></div>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-image-wrap">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1100&q=85" alt="Hamburguesa artesanal con queso, vegetales y pan dorado">
+            <div class="image-sticker"><span>♥</span><strong>100%</strong><small>ANTOJO</small></div>
+          </div>
+          <div class="floating-card floating-card-top"><span class="floating-icon">✦</span><div><strong>¡Qué delicia!</strong><small>Tu felicidad, servida</small></div></div>
+          <div class="floating-card floating-card-bottom"><span class="mini-food">🍟</span><div><strong>Combos para compartir</strong><small>Elige tu favorito</small></div></div>
+          <span class="hero-sparkle sparkle-one">✦</span><span class="hero-sparkle sparkle-two">✳</span>
+        </div>
+      </div>
+      <div class="hero-bottom container">
+        <span>ANTOJOS QUE ENAMORAN</span><span class="hero-bottom-line"></span><span>BUEN SABOR, BUENA ACTITUD</span>
+      </div>
+    </section>
+
+    <section class="features-strip">
+      <div class="container features-grid">
+        <article class="feature"><span class="feature-icon"><i data-lucide="flame"></i></span><div><strong>Siempre calientico</strong><small>Preparado al momento</small></div></article>
+        <article class="feature"><span class="feature-icon"><i data-lucide="heart"></i></span><div><strong>Hecho con cariño</strong><small>Ingredientes seleccionados</small></div></article>
+        <article class="feature"><span class="feature-icon"><i data-lucide="bike"></i></span><div><strong>Para llevar o recoger</strong><small>Consulta cobertura de domicilio</small></div></article>
+        <article class="feature"><span class="feature-icon"><i data-lucide="smile"></i></span><div><strong>Antojos felices</strong><small>Una sonrisa en cada pedido</small></div></article>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow"><span class="eyebrow-line"></span> HECHO PARA DISFRUTAR</span><h2>El menú de tus <em>antojos</em></h2></div>
+          <p>Clásicos irresistibles y combinaciones llenas de sabor. Encuentra tu favorito y agrégalo a tu pedido.</p>
+        </div>
+        <div class="menu-toolbar">
+          <div class="filter-tabs" role="group" aria-label="Filtrar productos">
+            <button class="filter-btn active" data-filter="todos">Todo</button>
+            <button class="filter-btn" data-filter="hamburguesas">Hamburguesas</button>
+            <button class="filter-btn" data-filter="salchipapas">Salchipapas</button>
+            <button class="filter-btn" data-filter="perros">Perros calientes</button>
+            <button class="filter-btn" data-filter="acompanantes">Acompañantes</button>
+          </div>
+          <label class="search-box"><i data-lucide="search"></i><input type="search" id="productSearch" placeholder="Buscar antojo..." aria-label="Buscar productos"></label>
+        </div>
+        <div class="product-grid" id="productGrid">
+          <article class="product-card" data-category="hamburguesas" data-name="hamburguesa salchi clásica">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Hamburguesa clásica"><span class="product-tag">FAVORITA</span><button class="quick-add" data-add="hamburguesa" aria-label="Agregar Hamburguesa Salchi"><i data-lucide="plus"></i></button></div>
+            <div class="product-info"><div class="product-category">HAMBURGUESAS</div><h3>Hamburguesa Salchi</h3><p>Carne jugosa, queso, lechuga, tomate y salsa de la casa.</p><div class="product-bottom"><strong class="price">$18.900</strong><button class="add-button" data-add="hamburguesa">Agregar <i data-lucide="plus"></i></button></div></div>
+          </article>
+          <article class="product-card" data-category="salchipapas" data-name="salchipapa explosiva">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80" alt="Porción de papas fritas doradas"><span class="product-tag tag-pink">MÁS PEDIDA</span><button class="quick-add" data-add="salchipapa" aria-label="Agregar Salchipapa Explosiva"><i data-lucide="plus"></i></button></div>
+            <div class="product-info"><div class="product-category">SALCHIPAPAS</div><h3>Salchipapa Explosiva</h3><p>Papas crocantes, salchicha, queso rallado y salsas.</p><div class="product-bottom"><strong class="price">$16.900</strong><button class="add-button" data-add="salchipapa">Agregar <i data-lucide="plus"></i></button></div></div>
+          </article>
+          <article class="product-card" data-category="perros" data-name="perro caliente especial">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1612392062798-2dbaa2e8a3c4?auto=format&fit=crop&w=700&q=80" alt="Perro caliente con salsas"><span class="product-tag">CLÁSICO</span><button class="quick-add" data-add="perro" aria-label="Agregar Perro Caliente Especial"><i data-lucide="plus"></i></button></div>
+            <div class="product-info"><div class="product-category">PERROS CALIENTES</div><h3>Perro Caliente Especial</h3><p>Pan suave, salchicha, queso, ripio y salsas al gusto.</p><div class="product-bottom"><strong class="price">$14.900</strong><button class="add-button" data-add="perro">Agregar <i data-lucide="plus"></i></button></div></div>
+          </article>
+          <article class="product-card" data-category="hamburguesas" data-name="hamburguesa doble queso">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=700&q=80" alt="Hamburguesa doble con queso"><button class="quick-add" data-add="doble" aria-label="Agregar Doble Queso"><i data-lucide="plus"></i></button></div>
+            <div class="product-info"><div class="product-category">HAMBURGUESAS</div><h3>Doble Queso</h3><p>Doble carne, doble queso y una salsa especial que enamora.</p><div class="product-bottom"><strong class="price">$24.900</strong><button class="add-button" data-add="doble">Agregar <i data-lucide="plus"></i></button></div></div>
+          </article>
+          <article class="product-card" data-category="salchipapas" data-name="salchipapa mixta">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=700&q=80" alt="Papas fritas para compartir"><button class="quick-add" data-add="mixta" aria-label="Agregar Salchipapa Mixta"><i data-lucide="plus"></i></button></div>
+            <div class="product-info"><div class="product-category">SALCHIPAPAS</div><h3>Salchipapa Mixta</h3><p>Papas, salchicha, pollo desmechado, queso y salsitas.</p><div class="product-bottom"><strong class="price">$22.900</strong><button class="add-button" data-add="mixta">Agregar <i data-lucide="plus"></i></button></div></div>
+          </article>
+          <article class="product-card" data-category="acompanantes" data-name="papas crocantes">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80" alt="Papas crocantes"><button class="quick-add" data-add="papas" aria-label="Agregar Papas Crocantes"><i data-lucide="plus"></i></button></div>
+            <div class="product-info"><div class="product-category">ACOMPAÑANTES</div><h3>Papas Crocantes</h3><p>Una porción doradita, perfecta para compartir o picar.</p><div class="product-bottom"><strong class="price">$7.900</strong><button class="add-button" data-add="papas">Agregar <i data-lucide="plus"></i></button></div></div>
+          </article>
+        </div>
+        <p class="menu-note"><i data-lucide="info"></i> Precios de muestra en pesos colombianos (COP). Actualízalos según tu negocio.</p>
+      </div>
+    </section>
+
+    <section class="about-section section" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <div class="about-photo"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1000&q=85" alt="Comida preparada para compartir en una mesa"></div>
+          <div class="about-stamp"><span>♥</span><strong>CON AMOR</strong><small>EN CADA BOCADO</small></div>
+          <div class="about-caption"><i data-lucide="sparkles"></i> Sabor que reúne</div>
+        </div>
+        <div class="about-copy"><span class="eyebrow"><span class="eyebrow-line"></span> NUESTRA HISTORIA</span><h2>Somos <em>Salchidaniela,</em><br>antojos con corazón.</h2>
+          <p class="about-lead">Creemos que una buena comida puede convertir cualquier momento en uno especial.</p>
+          <p>Nacimos para compartir el gusto por las comidas rápidas, con combinaciones deliciosas, atención cercana y ese toque casero que hace que quieras volver. Cada pedido es una oportunidad para darte algo rico y sacarte una sonrisa.</p>
+          <div class="values-list"><div><span><i data-lucide="check"></i></span><div><strong>Buen sabor, siempre</strong><small>Ingredientes elegidos con cuidado.</small></div></div><div><span><i data-lucide="check"></i></span><div><strong>Atención con cariño</strong><small>Queremos que te sientas como en casa.</small></div></div></div>
+          <a href="#contacto" class="text-link">Hablemos de tu próximo antojo <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="combo-banner">
+      <div class="container combo-inner"><div><span class="eyebrow eyebrow-light">TU MOMENTO DEL DÍA</span><h2>Hoy se vale darse<br>un <em>gustico.</em></h2><p>Elige tus favoritos y arma un pedido a tu manera.</p></div><a href="#menu" class="btn btn-white">¡Se me antojó! <i data-lucide="heart"></i></a><span class="banner-doodle">✳</span></div>
+    </section>
+
+    <section class="section details-section" id="pagos">
+      <div class="container">
+        <div class="section-heading centered"><div><span class="eyebrow"><span class="eyebrow-line"></span> FÁCIL Y SEGURO</span><h2>Todo listo para <em>disfrutar</em></h2></div><p>Queremos que pedir sea tan sencillo como disfrutar.</p></div>
+        <div class="details-grid">
+          <article class="detail-card"><span class="detail-icon"><i data-lucide="wallet"></i></span><h3>Modos de pago</h3><p>Paga de la forma que más te convenga.</p><div class="payment-chips"><span>💵 Efectivo</span><span>📱 Nequi</span><span>📲 Daviplata</span><span>💳 Transferencia</span></div><small>Confirma los métodos disponibles al realizar tu pedido.</small></article>
+          <article class="detail-card" id="ubicacion"><span class="detail-icon"><i data-lucide="map-pin"></i></span><h3>¿Dónde estamos?</h3><p>Estamos listos para atenderte en:</p><div class="location-highlight"><i data-lucide="map-pinned"></i><div><strong>Medellín, Colombia</strong><small>Dirección por confirmar</small></div></div><small>Reemplaza este dato por la dirección real y agrega tu enlace de Google Maps.</small></article>
+          <article class="detail-card"><span class="detail-icon"><i data-lucide="clock-3"></i></span><h3>Horarios</h3><p>¡Guarda este espacio para tus antojos!</p><div class="hours-list"><div class="location-highlight"><i data-lucide="clock-3"></i><div><strong>Lunes a sábado</strong><small>Por confirmar</small></div></div><div class="location-highlight"><i data-lucide="calendar-days"></i><div><strong>Domingos y festivos</strong><small>Por confirmar</small></div></div></div><small>Actualiza aquí tus horarios reales de atención.</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-copy"><span class="eyebrow"><span class="eyebrow-line"></span> ESTAMOS PARA TI</span><h2>¿Hablamos de<br><em>comida rica?</em></h2><p>¿Tienes dudas, quieres hacer un pedido o necesitas conocer la cobertura? Escríbenos, ¡nos encantará atenderte!</p>
+          <div class="contact-item"><span><i data-lucide="message-circle"></i></span><div><small>WHATSAPP</small><strong>Configura tu número de negocio</strong></div></div>
+          <div class="contact-item"><span><i data-lucide="instagram"></i></span><div><small>INSTAGRAM</small><strong>@salchidaniela</strong></div></div>
+          <div class="contact-item"><span><i data-lucide="map-pin"></i></span><div><small>UBICACIÓN</small><strong>Medellín, Colombia</strong></div></div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <h3>Déjanos un mensajito <span>♥</span></h3><p>Cuéntanos cómo podemos ayudarte y te contactaremos.</p>
+          <label for="name">Tu nombre</label><input type="text" id="name" name="name" placeholder="¿Cómo te llamas?" autocomplete="name" required>
+          <label for="phone">Tu número</label><input type="tel" id="phone" name="phone" placeholder="Ej. 300 123 4567" autocomplete="tel" inputmode="tel" required>
+          <label for="email">Tu correo electrónico</label><input type="email" id="email" name="email" placeholder="tunombre@correo.com" autocomplete="email" required>
+          <label for="message">Tu mensaje <span class="message-counter"><span id="messageCount">0</span>/150 caracteres</span></label><textarea id="message" name="message" rows="4" maxlength="150" minlength="1" placeholder="Quiero hacer un pedido de..." required></textarea>
+          <button type="submit" class="btn btn-primary form-submit">Preparar mensaje <i data-lucide="send"></i></button>
+          <p class="form-feedback" id="formFeedback" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section class="footer-col footer-about">
+        <a class="brand footer-brand" href="#inicio"><span class="brand-mark"><i data-lucide="utensils"></i><span class="brand-heart">♥</span></span><span class="brand-name">salchi<span>daniela</span><small>ANTOJOS FELICES</small></span></a>
+        <p class="footer-logo-note">Comidas con corazón, antojos para recordar. Preparado con cariño para alegrarte el día.</p>
+        <div class="social-links"><a href="#contacto" aria-label="Instagram: configurar enlace" title="Configura aquí tu Instagram"><i data-lucide="instagram"></i></a><a href="#contacto" aria-label="WhatsApp: configurar enlace" title="Configura aquí tu WhatsApp"><i data-lucide="message-circle"></i></a><a href="#contacto" aria-label="Contacto"><i data-lucide="mail"></i></a></div>
+      </section>
+      <section class="footer-col"><h3>Explora</h3><ul><li><a href="#inicio">Inicio</a></li><li><a href="#menu">Nuestro menú</a></li><li><a href="#nosotros">Quiénes somos</a></li><li><a href="#pagos">Métodos de pago</a></li><li><a href="#contacto">Contacto</a></li></ul></section>
+      <section class="footer-col"><h3>Visítanos</h3><p><i data-lucide="map-pin"></i> Medellín, Antioquia, Colombia</p><p><i data-lucide="clock-3"></i> Horario: por confirmar</p><p>Dirección exacta pendiente de confirmar.</p><a href="#ubicacion">Ver información de ubicación</a></section>
+      <section class="footer-col"><h3>Encuéntranos en el mapa</h3><iframe class="footer-map" title="Mapa de referencia en Medellín, Colombia" src="https://maps.google.com/maps?q=Parque%20de%20Berr%C3%ADo%2C%20Medell%C3%ADn%2C%20Colombia&t=&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><small class="footer-map-note">Ubicación de referencia en Medellín; no representa aún la dirección real del negocio.</small></section>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Salchidaniela. Todos los derechos reservados.</span><a href="#inicio">Volver arriba ↑</a><span>Hecho con ♥ y mucho sabor</span></div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Mi pedido" aria-hidden="true">
+    <div class="cart-header"><div><span class="eyebrow">TU ANTOJO</span><h3>Mi pedido <span id="drawerCount">(0)</span></h3></div><button class="icon-button" id="closeCart" aria-label="Cerrar carrito"><i data-lucide="x"></i></button></div>
+    <div class="cart-items" id="cartItems"><div class="empty-cart"><span>🛍️</span><strong>Tu pedido está esperando</strong><p>Agrega algo rico desde nuestro menú.</p><button class="btn btn-primary" id="goToMenu">Explorar menú</button></div></div>
+    <div class="cart-footer"><div class="cart-total"><span>Total estimado</span><strong id="cartTotal">$0</strong></div><p>El domicilio, si aplica, se confirma por WhatsApp.</p><button class="btn btn-primary checkout-button" id="checkoutButton">Pedir por WhatsApp <i data-lucide="message-circle"></i></button></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
